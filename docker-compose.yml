@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  httpd:
+    build: .
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    ports:
+      - 80:80
+    tty: true
